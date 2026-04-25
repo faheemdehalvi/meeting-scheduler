@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Voice PA — Meeting Scheduler</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <h1>Voice PA</h1>
+      <span id="status" class="status">idle</span>
+    </header>
+
+    <section id="conversation" class="conversation" aria-live="polite"></section>
+
+    <section id="event-card" class="event-card hidden">
+      <h2 id="ev-title">—</h2>
+      <p id="ev-when" class="muted">—</p>
+      <p id="ev-where" class="muted hidden"></p>
+      <p id="ev-who" class="muted hidden"></p>
+      <p id="ev-notes" class="hidden"></p>
+      <div class="actions">
+        <a id="gcal-link" class="btn primary" target="_blank" rel="noopener">Add to Google Calendar</a>
+        <a id="ics-link" class="btn">Download .ics (Apple / Outlook)</a>
+        <button id="reset-btn" class="btn ghost" type="button">New meeting</button>
+      </div>
+    </section>
+
+    <footer class="dock">
+      <button id="mic-btn" class="mic" type="button" aria-label="Talk">
+        <span class="mic-dot"></span>
+        <span class="mic-label">Tap to talk</span>
+      </button>
+      <p class="hint">Say something like &ldquo;schedule a 30-minute sync with Priya tomorrow at 4pm about the launch&rdquo;.</p>
+    </footer>
+  </main>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
