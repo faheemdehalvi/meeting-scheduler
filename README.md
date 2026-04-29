@@ -27,8 +27,8 @@ No OAuth setup. No data stored anywhere except your local browser session.
 ## Setup
 
 ```bash
-git clone https://github.com/faheemdehalvi/meeting-scheduler.git
-cd meeting-scheduler
+git clone https://github.com/faheemdehalvi/Voice-Automated-Meeting-Scheduler-Enterprise.git
+cd Voice-Automated-Meeting-Scheduler-Enterprise
 npm install
 cp .env.example .env
 ```
